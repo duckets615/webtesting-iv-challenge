@@ -1,19 +1,14 @@
 
-
-//==============================================================================
-
-//------------------------------------------------
 const request = require('supertest');
 const server = require('./server.js');
 const resourceManager = require('./resource_manager.js');
 const config = require('./config.js');
 
 
-//==============================================================================
 
 describe('Test API Server', () => {
 
-//------------------------------------------------
+
     describe('Test Retrieve Resource', () => {
         //
         const testUrl = `${config.URL_API_RESOURCE}/1`;
